@@ -1,0 +1,12 @@
+document.write("Pi="+Math.PI+"<br>")
+document.write("e="+Math.E+"<br>")
+var sayi=5
+document.write("kök="+Math.sqrt(sayi)+"<br>")
+document.write("kare="+Math.pow(sayi,2)+"<br>")
+document.write("Küp="+Math.pow(sayi,3)+"<br>")
+document.write("mak="+Math.max(sayi,2,4,6)+"<br>")
+document.write("min="+Math.min(sayi,2,4,6)+"<br>")
+document.write("yuvarlat="+Math.round(sayi)+"<br>")
+document.write("küçük tam sayıya yuvarlat="+Math.floor(sayi)+"<br>")
+document.write("büyük tam sayıya yuvarlat="+Math.ceil(sayi)+"<br>")
+document.write("kök="+Math.sqrt(sayi)+"<br>")
