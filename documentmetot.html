@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1 id="manset">İlk Manşet</h1>
+        <p id="ilk"></p>
+        <p id="ikinci"></p>
+        <img height="200px" src="campercat.jpeg" id="lovecat" alt="campercat" onmouseover="hacker()" onmouseout="camper()">
+        <script>
+            document.getElementById("manset").innerHTML="Son Manşet";
+
+            document.getElementById("manset").style.color="red";
+            document.getElementById("manset").style.fontFamily="Arial";
+
+            var kediler=document.getElementById("kediler");
+
+            function camper(){
+                lovecat.src="campercat.jpeg";
+            }
+
+            function hacker(){
+                lovecat.src="hackercat.jpg";
+            }
+
+
+
+        </script>
+    </body>
+</html>
