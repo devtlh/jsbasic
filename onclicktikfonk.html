@@ -10,9 +10,17 @@
         <button onclick="document.getElementById('id1').style.color='red'">Tıkla</button>
 
         <h1 onclick="this.innerHTML='Tıkladın Aferin'">Buraya Tıkla </h1>
+        <button onclick="tarih()">
+            Tarihimiz nedir?
+        </button>
+        <p id="tarih"></p>
         <script>
             function tik(){
                 alert("Butono Tıkladınız...");
+            }
+
+            function tarih(){
+                document.getElementById("tarih").innerHTML=Date();
             }
         </script>
     </body>
