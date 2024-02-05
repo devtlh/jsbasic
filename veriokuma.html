@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Veri Okuma</title>
+    </head>
+    <body>
+        <form action="">
+            Ad: <input type="text" id="ad"> <br>
+            <input type="button" value="OK" onclick="yaz()">
+        </form>
+        <p id="cikis"></p>
+        <script>
+            function yaz(){
+                var ad=document.getElementById("ad").value;
+                document.getElementById("cikis").innerHTML=ad;
+            }
+        </script>
+    </body>
+</html>
