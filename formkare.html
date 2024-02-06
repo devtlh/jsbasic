@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <form action="">
+            Sayı: <input type="text" id="sayi"> <br>
+            Karesi: <span id="sonuc"></span> <br>
+            <input type="button" value="Hesapla" onclick="karesi()">
+            <br>
+            <br>
+            <br>
+
+            Sayı 1: <input type="text" id="sayi1"> <br>
+            Sayı 2: <input type="text" id="sayi2"> <br>
+            Toplam: <span id="toplam"></span> <br>
+            Ortalam: <span id="ortalama"></span> <br>
+            <input type="button" value="topla" onclick="toplam()">
+        </form>
+        <script>
+            function karesi(){
+                var sayi=Number(document.getElementById("sayi").value);
+                var kare=sayi*sayi;
+                document.getElementById("sonuc").innerHTML=kare;
+            }
+
+            function toplam(){
+                var sayi1=Number(document.getElementById("sayi1").value);
+                var sayi2=Number(document.getElementById("sayi2").value);
+                var toplam=sayi1+sayi2;
+                var ortalama=toplam/2
+                document.getElementById("toplam").innerHTML=toplam;
+                document.getElementById("ortalama").innerHTML=ortalama;
+            }
+        </script>
+    </body>
+</html>
