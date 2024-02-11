@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Hata Uygulamaları</title>
+    </head>
+    <body>
+        <h1>Form İle Throw Uygulaması </h1>
+        <form>
+            Ders Notu: <input type="text" id="dersnotu"><br>
+            <input type="button" value="Kontrol Et" onclick="kontrol()">
+            
+        </form>
+        <p id="hatailetisi"></p>
+        <p id="girilen"></p>
+        <script>
+            function kontrol(){
+                var dersnotu, hatailetisi;
+                hatailetisi=document.getElementById("hatailetisi");
+                hatailetisi.innerHTML="";
+
+                dersnotu=document.getElementById("dersnotu").value;
+
+                try{
+                    if(dersnotu == "") throw "ders notu girilmemiş";
+                    if(isNaN(dersnotu)) throw "sayısal değer girilmemiş.";
+                    dersnotu=Number(dersnotu);
+                    if(dersnotu<0 || dersnotu>10) throw "dersnotu 0 ile 10 arası olmalı.";
+                }
+                catch(err){
+                    hatailetisi.innerHTML="hata:"+err;
+                }
+                finally{
+                    document.getElementById("girilen").innerHTML=dersnotu;
+
+                }
+            }
+
+        </script>
+    </body>
+</html>
